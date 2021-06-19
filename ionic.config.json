@@ -1,0 +1,7 @@
+{
+  "name": "ionic-video-demo",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
