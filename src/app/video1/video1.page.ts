@@ -35,6 +35,9 @@ export class Video1Page implements OnInit {
   apiTimer2: any;
   apiTimer3: any;
   testApi = true;
+  subtitle: string = null;
+  language: string = null;
+  subtitleOptions: any = null;
 
   constructor() { }
 
@@ -61,6 +64,9 @@ export class Video1Page implements OnInit {
     const res: any = await this.videoPlayer.initPlayer({
       mode: this.videoMode,
       url: this.video.url,
+      subtitle: this.subtitle,
+      language: this.language,
+      subtitleOptions: this.subtitleOptions,
       playerId: 'fullscreen',
       componentTag: 'app-video1'
     });
